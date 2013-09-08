@@ -21,6 +21,7 @@ class HomePlugin(p.SingletonPlugin):
 
     def update_config(self, config):
         p.toolkit.add_template_directory(config, 'theme/templates')
+        p.toolkit.add_public_directory(config, 'theme/public')
 
     def get_helpers(self):
         return {'hello_world': hello_world, 'hot_datasource': hot_datasource, 'lastest_datasource': lastest_datasource}

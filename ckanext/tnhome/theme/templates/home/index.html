@@ -1,6 +1,8 @@
 {% extends "page.html" %}
 
-
+{% block header %}
+     {% snippet "header.html" %}
+{% endblock %}
 
 {% block content %}
     <div role="main">
@@ -30,21 +32,22 @@
         </ul>
         <table class='table table-hover'>
             <tr>
-                <td><i class="icon-camera"></i>　台南景點</td>
+                <td>
+                    <img src='images/camera.png' width='30px' height='30px'/>　台南景點
+                </td>
             </tr>
             <tr>
-                <td><i class="icon-glass"></i>　台南餐飲</td>
+                <td><img src='images/food.png' width='30px' height='30px'/>　台南餐飲</td>
             </tr>    
             <tr>
-                <td><i class="icon-camera"></i>　台南景點</td>
+                <td><img src='images/camera.png' width='30px' height='30px'/>　台南景點</td>
             </tr>
             <tr>
-                <td><i class="icon-glass"></i>　台南餐飲</td>
+                <td><img src='images/food.png' width='30px' height='30px'/>　台南餐飲</td>
             </tr>
         </table>
 
     </div>
-
     {{h.hot_datasource()}}
     {{h.lastest_datasource()}}
     <div class='module-content'></div>
