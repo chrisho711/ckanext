@@ -1,0 +1,60 @@
+{% extends "page.html" %}
+
+
+
+{% block content %}
+    <div role="main">
+        <div id="content" class="container">
+            {{ self.flash() }}
+            {{ self.primary_content() }}
+        </div>
+    </div>
+    <div class="main homepage">
+        <div class="container">
+            {{ self.secondary_content() }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block primary_content %}
+<div clsss='module'>
+    <div class='module-content'></div>
+    <div class='module-content span3 box'>
+        <span>資料目錄</span>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">交通</a>
+            </li>
+            <li><a href="#">景點</a></li>
+            <li><a href="#">戶籍</a></li>
+        </ul>
+        <table class='table table-hover'>
+            <tr>
+                <td><i class="icon-camera"></i>　台南景點</td>
+            </tr>
+            <tr>
+                <td><i class="icon-glass"></i>　台南餐飲</td>
+            </tr>    
+            <tr>
+                <td><i class="icon-camera"></i>　台南景點</td>
+            </tr>
+            <tr>
+                <td><i class="icon-glass"></i>　台南餐飲</td>
+            </tr>
+        </table>
+
+    </div>
+
+    {{h.hot_datasource()}}
+    {{h.lastest_datasource()}}
+    <div class='module-content'></div>
+
+</div>
+{% endblock %}
+
+
+{% block secondary_content %}
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

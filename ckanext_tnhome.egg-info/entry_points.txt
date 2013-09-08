@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+	# Add plugins here, eg
+	# myplugin=ckanext.tnhome:PluginClass
+    myhome=ckanext.tnhome.plugin:HomePlugin
+	
