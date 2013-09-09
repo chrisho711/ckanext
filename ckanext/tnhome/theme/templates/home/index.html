@@ -20,11 +20,23 @@
 {% endblock %}
 
 {% block primary_content %}
-<div clsss='module'>
     <div class='row'>
-        <div class='module-content'></div>
+        <div class='span6 cht-col'>
+            <div style='width:300px'>
+                <img src='images/tower.jpg'/>
+            </div>    
+        </div>
+        <div class='span6 cht-col'>
+            建設中         
+        </div>
 
-        <div class='span3 box module-content'>
+    </div>
+    <div class='row'>
+        {{h.hot_datasource()}}
+        {{h.lastest_datasource()}}
+
+       
+        <div class='span3 offset3 cht-col'>
             <span>資料目錄</span>
             <ul class="nav nav-tabs">
                 <li class="active">
@@ -51,13 +63,13 @@
             </table>
 
         </div>
-        {{h.hot_datasource()}}
-        {{h.lastest_datasource()}}
-        <div class='module-content'></div>
-
     </div>
-
-</div>
+    <div class='row'>
+        <div class='span12 cht-col'>
+            建設中Footer         
+        </div>
+    </div>
+    
 {% endblock %}
 
 

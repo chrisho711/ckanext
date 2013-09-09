@@ -1,3 +1,18 @@
 .span-icon {
     width: 30px;
 }
+
+.masthead {
+    min-height: 55px;
+    color: #ffffff;
+    background: #294D8B;
+}
+
+.cht-box{
+    background-color: #ffffff;
+}
+
+.cht-col{
+    margin-top:20px;
+    background-color: #ffffff;
+}
