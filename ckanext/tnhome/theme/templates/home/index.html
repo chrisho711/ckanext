@@ -21,23 +21,12 @@
 
 {% block primary_content %}
     <div class='row'>
-        <div class='span6 cht-col'>
-            <div style='width:300px'>
-                <img src='images/tower.jpg'/>
-            </div>    
-        </div>
-        <div class='span6 cht-col'>
-            建設中         
-        </div>
-
-    </div>
-    <div class='row'>
         {{h.hot_datasource()}}
         {{h.lastest_datasource()}}
 
        
-        <div class='span3 offset3 cht-col'>
-            <span>資料目錄</span>
+        <div class='span3 cht-col cht-box'>
+            <div class='cht-module-heading'>資料目錄</div>
             <ul class="nav nav-tabs">
                 <li class="active">
                     <a href="#">交通</a>
@@ -45,7 +34,7 @@
                 <li><a href="#">景點</a></li>
                 <li><a href="#">戶籍</a></li>
             </ul>
-            <table class='table table-hover'>
+            <table class='table table-hover cht-table'>
                 <tr>
                     <td>
                         <span class='span-icon'><img src='images/camera.png'/></span>　台南景點
@@ -60,16 +49,14 @@
                 <tr>
                     <td><span class='span-icon'><img src='images/food.png'/></span>　台南餐飲</td>
                 </tr>
+                <tr>
+                    <td><span class='span-icon'><img src='images/food.png'/></span>　台南餐飲</td>
+                </tr>
             </table>
 
         </div>
     </div>
-    <div class='row'>
-        <div class='span12 cht-col'>
-            建設中Footer         
-        </div>
-    </div>
-    
+   
 {% endblock %}
 
 

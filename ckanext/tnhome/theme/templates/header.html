@@ -69,8 +69,8 @@
       {% block header_logo %}
         {% if g.site_logo %}
         <a class="logo" href="{{ h.url('home') }}">
-            <span class='span1'>
-                <img src="images/tainan.gif" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" />
+            <span>
+                <img src="images/header.png" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" />
             </span>
         </a>
         {% else %}
@@ -84,32 +84,18 @@
     </hgroup>
 
     <div class="content">
-      {% block header_site_navigation %} 
-      <nav class="section navigation"> 
-           <ul class="nav nav-pills">
-            {% block header_site_navigation_tabs %}
-            {{ h.build_nav_main(
-              ('search', '推薦'),
-              ('organizations_index', '資料目錄'),
-              ('group_index', 'API庫'),
-              ('about', '關於我')
-            ) }}
-            {% endblock %}
-          </ul>
-        </nav>
-      {% endblock %}
-
-      {% block header_site_search %}
-        <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
-          <div class="field">
-            <label for="field-sitewide-search">{{ _('Search Datasets') }}</label>
-            <input id="field-sitewide-search" type="text" name="q" placeholder="{{ _('Search') }}" />
-            <button class="btn-search" type="submit">{{ _('Search') }}</button>
-          </div>
-        </form>
-      {% endblock %}
-
+        {% block header_site_navigation %}
+            <ul class="nav nav-tabs cht-menu">
+                {% block header_site_navigation_tabs %}
+                    {{ h.build_nav_main(
+                        ('search', _('Datasets')),
+                        ('organizations_index', _('Organizations')),
+                        ('group_index', _('Groups')),
+                        ('about', _('About'))
+                    ) }}    
+                {% endblock %}            
+            </ul>
+        {% endblock %}
     </div>
-  </div>
 </header>
 {% endblock %}
