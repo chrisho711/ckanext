@@ -13,6 +13,10 @@
     color: #000000;
 }
 
+.account-masthead .container{
+    background-color:#222255;
+}
+
 .masthead .content{
     position: static; 
 }
@@ -27,6 +31,7 @@
     border-style: none none none none;
     height: 350px;
     box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+    margin-left:40px;
 }
 
 .cht-col{
@@ -62,14 +67,64 @@
 [role=main],
 .main{
     background:#ffffff;
+    padding-top:0px;
 }
 
+[role=main] .container{
+    background-color:#ffffff;
+    background-image:url(/images/main_container.png);
+    background-repeat:repeat-x;
+}
 .cht-menu{
     width:940px;
     margin: auto;
+    color: #ffffff;
+    border-bottom:none;
+    margin-left : 20px;
 }
+
 
 .cht-menu > li {
     width: 100px;
     text-align: center;
+    background-color: #b7dfb7;
+    border-radius: 10px 10px 0px 0px; 
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.cht-menu a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cht-menu > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.cht-menu > li > a:hover,
+ > li > a:focus {
+    border-color: #eeeeee #eeeeee #dddddd;
+}
+.cht-menu > .active > a,
+.cht-menu > .active > a:hover,
+.cht-menu > .active > a:focus {
+    color: #555555;
+    background-color: #44aa44;
+    border-bottom-color: transparent;
+    border-radius: 10px 10px 0px 0px; 
+    cursor: default;
+}
+
+.cht-menu > li > a:hover,
+.cht-menu > li > a:focus {
+    text-decoration: none;
+    background-color: #44aa44;
+    border-radius: 10px 10px 0px 0px; 
 }
