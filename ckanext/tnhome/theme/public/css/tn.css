@@ -50,8 +50,23 @@
     border: 1px;
     border-style: solid none solid solid;
     border-color: #b7df2d;   
-    border-radius: 20px 0px 0px 0px;  
+    border-radius: 0px 0px 0px 0px;  
 }
+
+.module-heading{
+    background-image: url(/images/module-heading.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    height:18px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left: 20px;
+    border: 1px;
+    border-style: solid none solid solid;
+    border-color: #b7df2d;   
+    border-radius: 0px 0px 0px 0px;  
+}
+
 
 .cht-table{
     border-style: none;
@@ -59,8 +74,8 @@
 
 .cht-table td{
     border: 1px;
-    border-style: solid none solid none;
-    border-color: #b7df2d;   
+    border-color #aaaaaa;
+    border-style:none none dashed none;
 
 }
 
@@ -116,7 +131,7 @@
 .cht-menu > .active > a:hover,
 .cht-menu > .active > a:focus {
     color: #555555;
-    background-color: #44aa44;
+    background-color: #DEFFAF;
     border-bottom-color: transparent;
     border-radius: 10px 10px 0px 0px; 
     cursor: default;
@@ -125,6 +140,6 @@
 .cht-menu > li > a:hover,
 .cht-menu > li > a:focus {
     text-decoration: none;
-    background-color: #44aa44;
+    background-color: #DEFFAF;
     border-radius: 10px 10px 0px 0px; 
 }
